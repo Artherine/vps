@@ -20,6 +20,7 @@ proxies:
 proxy-groups:
   - { name: AutoDevide, type: url-test, proxies: [HK-Server, Stable]}
   - { name: Stable, type: url-test, proxies: [LA-Socks]}
+  - { name: Balance, type: load-balance, proxies: [HK-Server, LA-Socks]}
 rules:
   - 'DOMAIN,mocv2.com,DIRECT'
   - 'DOMAIN,chatgpt.com,Stable'
