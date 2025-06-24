@@ -19,7 +19,7 @@ proxies:
   - {name: "LA-Socks", type: ss, server: 104.225.152.211, port: 13135, cipher: aes-256-gcm, password: "rwg6ERfNro4v2fbR", udp: true} 
 proxy-groups:
   - { name: AutoDevide, type: url-test, proxies: [HK-Server, Stable]}
-  - { name: Stable, type: url-test, proxies: [LA-Socks, 三流加速]}
+  - { name: Stable, type: url-test, proxies: [LA-Socks]}
 rules:
   - 'DOMAIN,mocv2.com,DIRECT'
   - 'DOMAIN,chatgpt.com,Stable'
