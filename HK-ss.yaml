@@ -16,8 +16,37 @@ dns:
   fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
   - {name: "HK-Server", type: ss, server: 47.239.106.139, port: 8388, cipher: aes-256-gcm, password: "well8888", udp: true} 
+  - { name: 'V1-美国 1 [隧道] x1', type: ss, server: ccc.ct.xiaomi-api.xyz, port: 61611, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V1-美国 2 [隧道] x1', type: ss, server: ccc.cm.xiaomi-api.xyz, port: 61621, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-美国 3 [隧道] x1', type: ss, server: ccc.cn1.xiaomi-api.xyz, port: 61601, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-美国 4 [IEPL] x2', type: ss, server: x2.xiaomi-api.xyz, port: 62461, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V3-美国 5 [IEPL] x2', type: ss, server: x1.xiaomi-api.xyz, port: 62461, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V1-日本 1 [隧道] x1', type: ss, server: ccc.cm.xiaomi-api.xyz, port: 61321, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V1-日本 2 [隧道] x1', type: ss, server: ccc.ct.xiaomi-api.xyz, port: 61311, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-日本 3 [隧道] x1', type: ss, server: ccc.cn1.xiaomi-api.xyz, port: 61301, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V3-日本 4 [IEPL] x2', type: ss, server: x1.xiaomi-api.xyz, port: 62431, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V3-日本 5 [IEPL] x2', type: ss, server: x2.xiaomi-api.xyz, port: 62431, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V1-香港 1 [隧道] x1', type: ss, server: ccc.ct.xiaomi-api.xyz, port: 61111, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V1-香港 2 [IEPL] x4', type: ss, server: ccc.cn1.xiaomi-api.xyz, port: 61101, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-香港 3 [隧道] x1', type: ss, server: ccc.cm.xiaomi-api.xyz, port: 61121, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-香港 4 [IEPL] x2', type: ss, server: x1.xiaomi-api.xyz, port: 62411, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V3-香港 5 [IEPL] x2', type: ss, server: x2.xiaomi-api.xyz, port: 62411, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-台湾 1 [隧道] X1', type: ss, server: ccc.ct.xiaomi-api.xyz, port: 61211, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-台湾 2 [隧道] X1', type: ss, server: ccc.cm.xiaomi-api.xyz, port: 61221, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V3-台湾 3 [IEPL] x2', type: ss, server: x1.xiaomi-api.xyz, port: 62421, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-新加坡 1 [隧道] x1', type: ss, server: ccc.ct.xiaomi-api.xyz, port: 61411, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-新加坡 2 [隧道] x1', type: ss, server: ccc.cm.xiaomi-api.xyz, port: 61421, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V3-新加坡 3 [IEPL] x2', type: ss, server: x2.xiaomi-api.xyz, port: 62441, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-韩国 1 [隧道] x1', type: ss, server: ccc.cn1.xiaomi-api.xyz, port: 61501, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V3-韩国 2 [IEPL] x2', type: ss, server: x1.xiaomi-api.xyz, port: 62451, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V1-俄罗斯 1 [隧道] x1', type: ss, server: ccc.cn1.xiaomi-api.xyz, port: 61901, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-土耳其 1 [隧道] x1', type: ss, server: ccc.cn1.xiaomi-api.xyz, port: 61902, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-阿根廷 1 [隧道] x1', type: ss, server: ccc.cn1.xiaomi-api.xyz, port: 61903, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-越南 1 [隧道] x1', type: ss, server: ccc.cm.xiaomi-api.xyz, port: 61904, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
+  - { name: 'V2-德国 1 [隧道] x1', type: ss, server: ccc.cm.xiaomi-api.xyz, port: 61905, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
 proxy-groups:
-  - { name: Flexible, type: url-test, proxies: [HK-Server] }
+  - { name: AutoDevide, type: url-test, proxies: [HK-Server, 三流加速]}
+  - { name: 三流加速, type: select, proxies: ['V1-美国 1 [隧道] x1', 'V1-美国 2 [隧道] x1', 'V2-美国 3 [隧道] x1', 'V2-美国 4 [IEPL] x2', 'V3-美国 5 [IEPL] x2', 'V1-日本 1 [隧道] x1', 'V1-日本 2 [隧道] x1', 'V2-日本 3 [隧道] x1', 'V3-日本 4 [IEPL] x2', 'V3-日本 5 [IEPL] x2', 'V1-香港 1 [隧道] x1', 'V1-香港 2 [IEPL] x4', 'V2-香港 3 [隧道] x1', 'V2-香港 4 [IEPL] x2', 'V3-香港 5 [IEPL] x2', 'V2-台湾 1 [隧道] X1', 'V2-台湾 2 [隧道] X1', 'V3-台湾 3 [IEPL] x2', 'V2-新加坡 1 [隧道] x1', 'V2-新加坡 2 [隧道] x1', 'V3-新加坡 3 [IEPL] x2', 'V2-韩国 1 [隧道] x1', 'V3-韩国 2 [IEPL] x2', 'V1-俄罗斯 1 [隧道] x1', 'V2-土耳其 1 [隧道] x1', 'V2-阿根廷 1 [隧道] x1', 'V2-越南 1 [隧道] x1', 'V2-德国 1 [隧道] x1'] }
 rules:
   - 'DOMAIN,mocv2.com,DIRECT'
   - 'DOMAIN-SUFFIX,services.googleapis.cn,HK-Server'
