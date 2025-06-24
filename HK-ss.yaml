@@ -46,10 +46,12 @@ proxies:
   - { name: 'V2-越南 1 [隧道] x1', type: ss, server: ccc.cm.xiaomi-api.xyz, port: 61904, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
   - { name: 'V2-德国 1 [隧道] x1', type: ss, server: ccc.cm.xiaomi-api.xyz, port: 61905, cipher: chacha20-ietf-poly1305, password: 6077b3d3-1868-4772-940a-a3623311f3bf, udp: true }
 proxy-groups:
-  - { name: AutoDevide, type: url-test, proxies: [HK-Server, LA-Socks, 三流加速]}
+  - { name: AutoDevide, type: url-test, proxies: [HK-Server, Stable]}
+  - { name: Stable, type: url-test, proxies: [LA-Socks, 三流加速]}
   - { name: 三流加速, type: select, proxies: ['V1-美国 1 [隧道] x1', 'V1-美国 2 [隧道] x1', 'V2-美国 3 [隧道] x1', 'V2-美国 4 [IEPL] x2', 'V3-美国 5 [IEPL] x2', 'V1-日本 1 [隧道] x1', 'V1-日本 2 [隧道] x1', 'V2-日本 3 [隧道] x1', 'V3-日本 4 [IEPL] x2', 'V3-日本 5 [IEPL] x2', 'V1-香港 1 [隧道] x1', 'V1-香港 2 [IEPL] x4', 'V2-香港 3 [隧道] x1', 'V2-香港 4 [IEPL] x2', 'V3-香港 5 [IEPL] x2', 'V2-台湾 1 [隧道] X1', 'V2-台湾 2 [隧道] X1', 'V3-台湾 3 [IEPL] x2', 'V2-新加坡 1 [隧道] x1', 'V2-新加坡 2 [隧道] x1', 'V3-新加坡 3 [IEPL] x2', 'V2-韩国 1 [隧道] x1', 'V3-韩国 2 [IEPL] x2', 'V1-俄罗斯 1 [隧道] x1', 'V2-土耳其 1 [隧道] x1', 'V2-阿根廷 1 [隧道] x1', 'V2-越南 1 [隧道] x1', 'V2-德国 1 [隧道] x1'] }
 rules:
   - 'DOMAIN,mocv2.com,DIRECT'
+  - 'DOMAIN,chatgpt.com,Stable'
   - 'DOMAIN-SUFFIX,services.googleapis.cn,AutoDevide'
   - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,AutoDevide'
   - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
