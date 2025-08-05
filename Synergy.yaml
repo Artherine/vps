@@ -20,12 +20,13 @@ proxies:
   - {name: "LA-Socks-1", type: ss, server: 104.225.152.211, port: 13135, cipher: aes-256-gcm, password: "rwg6ERfNro4v2fbR", udp: true} 
   - {name: "LA-Socks-2", type: ss, server: 104.225.152.62, port: 13135, cipher: aes-256-gcm, password: "rwg6ERfNro4v2fbR", udp: true} 
 proxy-groups:
+  - { name: Select, type: select, proxies: [Balance, AutoDivide, HK-Socks, LA-Socks]}
   - { name: AutoDivide, type: url-test, proxies: [HK-Socks, LA-Socks]}
   - { name: HK-Socks, type: load-balance, proxies: [HK-Socks-1, HK-Socks-2]}
   - { name: LA-Socks, type: load-balance, proxies: [LA-Socks-1, LA-Socks-2]}
   - { name: Balance, type: load-balance, proxies: [HK-Socks, LA-Socks]}
 rules:
-  - 'DOMAIN,chatgpt.com,LA-Socks'
+  - 'DOMAIN,chatgpt.com,AutoDivide'
   - 'DOMAIN-SUFFIX,services.googleapis.cn,AutoDivide'
   - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,AutoDivide'
   - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
