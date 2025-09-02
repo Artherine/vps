@@ -15,8 +15,8 @@ dns:
   fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
   fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-  - {name: "HK-Socks-1", type: ss, server: 45.78.27.61, port: 17101, cipher: aes-256-gcm, password: "FwKTT4BvsMfs3zSY", udp: true} 
-  - {name: "HK-Socks-2", type: ss, server: 45.78.21.187, port: 17101, cipher: aes-256-gcm, password: "FwKTT4BvsMfs3zSY", udp: true} 
+  - {name: "HK-Socks-1", type: ss, server: 45.78.26.81, port: 17101, cipher: aes-256-gcm, password: "FwKTT4BvsMfs3zSY", udp: true} 
+  - {name: "HK-Socks-2", type: ss, server: 45.78.21.222, port: 17101, cipher: aes-256-gcm, password: "FwKTT4BvsMfs3zSY", udp: true} 
   - {name: "LA-Socks-1", type: ss, server: 104.225.236.28, port: 13135, cipher: aes-256-gcm, password: "rwg6ERfNro4v2fbR", udp: true} 
   - {name: "LA-Socks-2", type: ss, server: 104.225.234.206, port: 13135, cipher: aes-256-gcm, password: "rwg6ERfNro4v2fbR", udp: true} 
 proxy-groups:
@@ -540,4 +540,5 @@ rules:
   - 'DOMAIN-KEYWORD,-cn,DIRECT'
   - 'GEOIP,CN,DIRECT'
   - 'MATCH,AutoDivide'
+
 
