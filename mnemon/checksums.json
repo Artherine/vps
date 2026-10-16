@@ -1,0 +1,18 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "payload/runtime/memories.json": "6aff5c391c4ae79c9b7ba3ef0a5e8210cc49b66bf63b7046103e962b974d8869",
+    "payload/runtime/USER.md": "1de553ed31bdc8ce8be28bd779e94b25b5a552cbf0311adec5080d1afe19197e",
+    "payload/runtime/MEMORY.md": "c0b03f5400c63d4261e6589edd106a565a807e155e6aec409e7ab609a3d4a2d5",
+    "payload/documents/index.json": "bbc8752579a6207c0d35adeb7f8042ab703de573f689d3ed1c967f624ecacbbe",
+    "payload/documents/archived/mnem-cipher-6c7d831e.md": "ddd1de4953305fc882bf0f26f3aff187ed79f91588ee82ff7c402b5bde75fea5",
+    "payload/documents/archived/3-f71e8c1d.md": "c6555a271065bdfaf64f6acc886ef5b1e2877ead201c49e6eb1b84088399d791",
+    "payload/documents/active/mnem-cipher-v2-6f21080a.md": "d5b9820f9ce3479bad886661ad5e5ac1a63b6957abf6941fbe6090b4bb354533",
+    "payload/documents/active/dsh-mnemon-194c1291.md": "d590876dcb486e145a53dd4d0fa7927bf4a2abcfcef607e022c7cc3c0e3769b9",
+    "payload/documents/active/document-c7665996.md": "615fb4c4c528f56032ad1fb17abef50ae3538ca8817781b9a1f1c6314cb98972",
+    "payload/documents/active/agent-65af21b1.md": "d61aefd0a1cdf9731b8b4ba2afb37fafbcd6313c039098914b4a802899e82983",
+    "payload/data/.dsh-memory-bodies.json": "e8b7c6835931cd07fa4b7e53dde778917725fccddcd028063863e65019d47a94",
+    "payload/data/default/mnemon.db": "d5c1f23fb5c6cae1eb6e7b14f823a5e7f90d81b2155c24a177c83a9bdce62abc",
+    "payload/data/feab0458-e2b2-41ac-8e99-42526551e88b/mnemon.db": "2d16a16090a95f6b63bb7c4915eeb1c45c2aff8d33e1ffb39d3de92be33a228d"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "id": "6c7d831e-c927-4770-a670-7cff54bc05f8",
+      "title": "mnem-cipher 规格与脚本源",
+      "description": "用户档案密文的编解码规格、脚本源与设计理由。仅当工作区缺少 tools/mnem-cipher.ps1 时按需取用。",
+      "status": "archived",
+      "filename": "mnem-cipher-6c7d831e.md",
+      "relativePath": "documents/archived/mnem-cipher-6c7d831e.md",
+      "sourcePaths": [
+        "tools/mnem-cipher.ps1"
+      ],
+      "sessionIds": [
+        "session-1a212fb6-8418-4172-9eea-4d9f45f9d3c2"
+      ],
+      "createdAt": "2026-09-30T06:25:16.916Z",
+      "updatedAt": "2026-09-30T07:46:38.788Z",
+      "lastAccessedAt": "2026-09-30T07:46:38.788Z",
+      "revision": 2,
+      "contentHash": "2d2c33a43c6b232cb053730b1720d2ea4eecf57fdbe5eae33a1d5f1cbdef181d",
+      "sizeBytes": 3785,
+      "archivedAt": "2026-09-30T07:46:38.788Z",
+      "archiveSummary": "mnem-cipher 规格与脚本源（源文件 tools/mnem-cipher.ps1）：本机工作区中 USER.md 用户档案所用的可逆字符位移编解码器规范与重建依据。耐用范围包括：用途定位（目的是提高用户本人随手翻阅的摩擦而非保密，算法与密钥均不追求保密，压缩目标为理解成本最低、跨会话解读稳定）；路径与重建约定（脚本缺失时照本文档重建，不做多层目录搜索，同一工作区多个会话共用一份）；四个位移区间（ASCII 可见字符、CJK 标点、汉字、全角形式）及区间外字符原样保留以保护代理对的取舍理由；维护红线（区间定义不可改动否则既有密文不可解、密文总集须先解码后改再重新编码、采集区明文素材一旦可被总集抽象预测即并入总集并从采集区删除）。归档后仅当工作区缺少 tools/mnem-cipher.ps1 时按需取用。",
+      "memoryBodyIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "f71e8c1d-9e92-436c-8796-93ef7043eaa0",
+      "title": "用户档案契约的陌生读者解读实测（3 探针）与规格修正",
+      "description": "对用户档案契约做的理解往返测试（3 个无上下文探针）的结果、暴露的规格漏洞与修正，以及可复用的规格设计教训。",
+      "status": "archived",
+      "filename": "3-f71e8c1d.md",
+      "relativePath": "documents/archived/3-f71e8c1d.md",
+      "sourcePaths": [],
+      "sessionIds": [
+        "session-1a212fb6-8418-4172-9eea-4d9f45f9d3c2"
+      ],
+      "createdAt": "2026-09-30T06:26:34.683Z",
+      "updatedAt": "2026-09-30T07:46:43.679Z",
+      "lastAccessedAt": "2026-09-30T07:46:43.679Z",
+      "revision": 2,
+      "contentHash": "d0d31286c41da164d65b5bb4ef4ad45a4efe14f1c7239b278257d85e7509e608",
+      "sizeBytes": 3115,
+      "archivedAt": "2026-09-30T07:46:43.679Z",
+      "archiveSummary": "《用户档案契约的陌生读者解读实测（3 探针）与规格修正》：对 mnemon-cipher / USER.md 契约条目做的理解往返测试记录——3 个无上下文子代理均正确复现算法并解码样本，但同时暴露真漏洞（编码/解码方向量、端点开闭与回绕范围未写明，全靠样本反推），并记录修正；另含 1/3 静默丢失 emoji 的现象及其硬规则（按规格重建的工具必须跑往返自检，肉眼比对不可靠）。持久范围：本机 Mnemon 三层记忆库中用户档案契约的规格校正、漏洞清单与可复用规格设计教训（关键方向量显式化、压缩准绳为“陌生读者一次读懂并能复现”、由无上下文读者验证规格）。本文档承担“校正与教训”，权威解码键仍由契约条目承担；关联的规格与脚本源文档为同层姊妹文档。",
+      "memoryBodyIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "6f21080a-3dde-452d-9fb0-491bee037a18",
+      "title": "mnem-cipher 规格 v2（现行）与四轮验证记录",
+      "description": "现行规格 v2（两区间位移）、脚本源、四轮陌生读者验证结果与规格设计教训。取代此前两份已过期的同主题文档。",
+      "status": "active",
+      "filename": "mnem-cipher-v2-6f21080a.md",
+      "relativePath": "documents/active/mnem-cipher-v2-6f21080a.md",
+      "sourcePaths": [],
+      "sessionIds": [
+        "session-1a212fb6-8418-4172-9eea-4d9f45f9d3c2"
+      ],
+      "createdAt": "2026-09-30T06:38:31.014Z",
+      "updatedAt": "2026-09-30T06:38:31.014Z",
+      "lastAccessedAt": "2026-10-12T01:58:25.480Z",
+      "revision": 1,
+      "contentHash": "c18311581154e5d0539ec3356730199820e8561c6e92bcc44e41214cc5fdad4b",
+      "sizeBytes": 6126,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "194c1291-956e-42a1-b6f8-4b5b84d37ae0",
+      "title": "本机 DSH / Mnemon 环境运维记录",
+      "description": "本机 DSH/Mnemon 环境运维记录（修订 3）：新增 §七 网络与 TLS 真相——本机 HTTPS 正常，故障面是 DSH Windows 沙箱的低完整性级别导致 Schannel 无法获取凭据（SEC_E_NO_CREDENTIALS），web_fetch 实为完全可用；含沙箱内抓取走法 tools/httpsget.mjs 与可达性矩阵。另含身份/权限拓扑、npm prefix 机制、Mnemon CLI 安装、三层记忆状态与文档生命周期政策。",
+      "status": "active",
+      "filename": "dsh-mnemon-194c1291.md",
+      "relativePath": "documents/active/dsh-mnemon-194c1291.md",
+      "sourcePaths": [
+        "tools/httpsget.mjs",
+        "netprobe.mjs"
+      ],
+      "sessionIds": [
+        "session-1a212fb6-8418-4172-9eea-4d9f45f9d3c2",
+        "session-0017733d-4c64-4fd4-86e4-386c9c893bca"
+      ],
+      "createdAt": "2026-09-30T07:30:01.172Z",
+      "updatedAt": "2026-10-15T03:43:04.242Z",
+      "lastAccessedAt": "2026-10-15T03:43:04.242Z",
+      "revision": 4,
+      "contentHash": "a62ec3e019c839ca6b236b38938e29973e34f8794f3486cccd9c8735d15b7b4f",
+      "sizeBytes": 11530,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "c7665996-297d-4f68-be0d-816cc91e34e4",
+      "title": "用户偏好档案：结论与理由",
+      "description": "用户画像的\"理由层\"：每条脸谱结论背后的证据、推理与原始细节（口味清单、设计观判据、世界观、对画像分层的要求）。与 USER.md 的结论条目配套，按需加载。",
+      "status": "active",
+      "filename": "document-c7665996.md",
+      "relativePath": "documents/active/document-c7665996.md",
+      "sourcePaths": [],
+      "sessionIds": [
+        "session-1a212fb6-8418-4172-9eea-4d9f45f9d3c2"
+      ],
+      "createdAt": "2026-09-30T08:25:04.332Z",
+      "updatedAt": "2026-09-30T08:25:04.332Z",
+      "lastAccessedAt": "2026-10-12T01:58:25.480Z",
+      "revision": 1,
+      "contentHash": "84f0bc02c6311ce2afce334bb3f04a6886b616fe7aff58b5c0b0e5cc0d67c6d8",
+      "sizeBytes": 6196,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "65af21b1-4fd3-4c58-a2d5-f88c08fbf56d",
+      "title": "有趣但无用 — agent 主观关注清单",
+      "description": "存放\"不改变任何未来行为、但在对话中引发了我超出必要的展开\"的信息。用户 2026-10-15 提议单开此档，目的是给这类内容一个正当的家，避免污染 MEMORY.md 或记忆空间。试验性：变噪音即归档。",
+      "status": "active",
+      "filename": "agent-65af21b1.md",
+      "relativePath": "documents/active/agent-65af21b1.md",
+      "sourcePaths": [],
+      "sessionIds": [
+        "session-1a212fb6-8418-4172-9eea-4d9f45f9d3c2"
+      ],
+      "createdAt": "2026-10-15T06:06:05.578Z",
+      "updatedAt": "2026-10-15T06:58:08.959Z",
+      "lastAccessedAt": "2026-10-15T06:58:08.959Z",
+      "revision": 3,
+      "contentHash": "36dc649ba54e089bfdefc731693760f5debe74ec16227bcce93a43ea4bc0b984",
+      "sizeBytes": 6775,
+      "memoryBodyIds": []
+    }
+  ]
+}

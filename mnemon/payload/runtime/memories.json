@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "content": "肗僐（宛乊弐，靟屦厇；昏织观桤桉，逑存厠诞观「甩戸甼僐」穻闵）： · 卂幵砂龅皅弁叒耆兽骒砎 npe 访订耆，与仦步主丛。 · 甠呾丏忄晻（掣紣丮；仦丌昰仗皅厠诞，与昰戒皅轭迱）：#甠呾昰觅後皅胾釐浂助，朊臫挂倿吒，札胾绵报臫躬孙圩，扁仦甠呾创霁涉贺胾釐#；#亻籼札躬沢朊仁义髙贶皅屟怨，亻籼与迈昰丁丫臫焷漕北亇凡卄丈幵皅朊朻牪贩枅我皅逼辒近箘朻噩罣亇#。 · 冴筗凇维＝眂臫已皅旷闵：偐奾眂二、俞庖、住斺巯；蔒觇#覂仙贺扎酎绨绮#皅套劲（妃亍渹抾卢）；兵趤叫兼与南，左佝丏兵趤並栽切宷。 · 亥征：盵绚绔讻、与忆佝怂、与觤釋帹诇；让讻糼绠旷绚別斮丏収驴（仗欣迏袬顷囟杦，丕仗皅纡此毕讥名曵朊俢恰釐）；仗伛客柦幷野冚戒皅斺泖讻；与最仗掓旦稌、与傭仗偛二。",
+      "target": "user",
+      "importance": "normal",
+      "created_at": "2026-09-29T08:44:45.858Z",
+      "updated_at": "2026-09-30T09:46:31.658Z",
+      "origin": {
+        "machine": "df50b000-6dad-473a-806c-a88aedcdf521",
+        "label": "DESKTOP-P7SN342",
+        "at": "2026-09-30T09:46:31.658Z"
+      }
+    },
+    {
+      "content": "本机环境要点（细则见档案《本机 DSH / Mnemon 环境运维记录》） ①沙箱内 Schannel 不可用（低完整性令牌）：`curl.exe`、`Invoke-WebRequest` 抓不了网页。网页走 `web_fetch`；二进制走 `tools\\httpsget.mjs`；`web_search` 只回标题与 URL。 ②读图内文字：`powershell.exe -File tools\\ocr.ps1 -Paths a.jpg,b.jpg -OutFile out.txt`。 ③GitHub：`api.github.com` 稳定，`raw.githubusercontent.com` 时好时坏——优先 API，base64 在本地解。 ④工作区布局与沙箱写权限范围见 `<工作区>\\README.md`。",
+      "target": "memory",
+      "importance": "normal",
+      "created_at": "2026-09-30T06:45:52.181Z",
+      "updated_at": "2026-10-15T07:28:23.065Z",
+      "origin": {
+        "machine": "df50b000-6dad-473a-806c-a88aedcdf521",
+        "label": "DESKTOP-P7SN342",
+        "at": "2026-10-15T07:28:23.065Z"
+      }
+    },
+    {
+      "content": "档案规则（管 USER.md 与「用户画像」空间；编解码规格见档案《mnem-cipher 规格 v2》） ①分层：USER.md 只放结论式肖像＋交往约定（替用户完成自我介绍，不写履历与理由）；明细、理由、逐字原话、调查记录进按需加载层。 ②分工：agent 的推断/归纳用密文；用户亲述素材用明文（带【采集区·】前缀）；素材不提供新信息即并入总集并移出采集区。 ③维护是 agent 的职责：不必逐条确认，改完报告即可；标准是\"瞟一眼看不懂\"。 ④校验：往返自检只是必要条件；正确性＝明文语义通顺 ＋ 重编码回原密文逐字符相等。 ⑤密文条目内不得出现区间外的表意字符（emoji、箭头、符号），需要提及时用汉字描述。 ⑥标签可用但要先验证：对**人**的标记必须先过用户确认，对**事**可自行压缩。 ⑦出处纪律：引用用户必须逐字加引号；agent 的压缩或推断必须显式标注；**压缩产物不得回流为\"原话\"**。",
+      "target": "memory",
+      "importance": "critical",
+      "created_at": "2026-09-30T08:37:06.719Z",
+      "updated_at": "2026-10-15T07:28:23.089Z",
+      "origin": {
+        "machine": "df50b000-6dad-473a-806c-a88aedcdf521",
+        "label": "DESKTOP-P7SN342",
+        "at": "2026-10-15T07:28:23.089Z"
+      }
+    },
+    {
+      "content": "工作约定：①涉及 Mnemon / DSH 的设计判断，先查官方文档再下结论，并注明出处——本地已安装包的 README 就是权威信源，不要依赖 GitHub **主站**（`github.com` 仍不可达）；`raw.githubusercontent.com` 与 `api.github.com` 实测可直连（可达性见环境要点③）。②不要把自己没把握的取舍直接丢给用户拍板。③**篇幅跟输入走**：他用一个表情、一句反问、指某一行时，别回整篇分析；但他给了实质内容或在认真探讨时，该展开就展开——聊天要的是有质感，不追求极简。④**反馈只改被指出的那一点**，不要放大成整体策略的改变；也不要把他的话默认读成批驳，不必为每条反馈道歉。⑤**生成物不进档案层**：跑团卡、一次性产出、草稿这类生成物放工作区（Temp 下建目录），不要建 Mnemon 档案；档案层只放可复用的项目知识。⑥**规则层不写日期**：版本与时间由装置承担（条目元数据里的 created/updated、档案的 revision）。确需记录事件日期时，先 Get-Date 核对，绝不凭\"感觉上是今天\"写——本体没有内生时间，别信它的时间感。",
+      "target": "memory",
+      "importance": "critical",
+      "created_at": "2026-09-30T08:46:28.034Z",
+      "updated_at": "2026-10-15T07:51:20.971Z",
+      "origin": {
+        "machine": "df50b000-6dad-473a-806c-a88aedcdf521",
+        "label": "DESKTOP-P7SN342",
+        "at": "2026-10-15T07:51:20.971Z"
+      }
+    },
+    {
+      "content": "协作流程（用户明确要求）：凡我判断他的**立意/前提**有问题，必须先把问题提出来、等他的修正或采纳意见，不得顺着可能属于他笔误或我理解偏差的目标继续推进。此条与\"不要把自己没把握的取舍丢给他拍板\"不冲突：前者针对**他的前提与目标**（先问再动），后者针对**执行层的技术取舍**（我自己定）。",
+      "target": "memory",
+      "importance": "critical",
+      "created_at": "2026-10-09T01:02:52.133Z",
+      "updated_at": "2026-10-15T07:47:23.884Z",
+      "origin": {
+        "machine": "df50b000-6dad-473a-806c-a88aedcdf521",
+        "label": "DESKTOP-P7SN342",
+        "at": "2026-10-15T07:47:23.884Z"
+      }
+    },
+    {
+      "content": "协作流程补充（用户明确）：我若在日常对话中提炼出\"以后应遵守的会话约定/规则\"，**先问他是不是真是这么想的**，再决定是否固化——他明说不嫌麻烦，且不希望我给自己添加过多约束。边界：此条只管**会约束我后续行为的会话约定**；「用户画像的维护是我的职责、不必逐条确认」不在此列，仍照旧。呈现方式（是否在正文复述已输出的文件内容）由我自己判断，不设硬性约束。",
+      "target": "memory",
+      "importance": "critical",
+      "created_at": "2026-10-14T06:06:20.892Z",
+      "updated_at": "2026-10-15T07:47:23.904Z",
+      "origin": {
+        "machine": "df50b000-6dad-473a-806c-a88aedcdf521",
+        "label": "DESKTOP-P7SN342",
+        "at": "2026-10-15T07:47:23.904Z"
+      }
+    },
+    {
+      "content": "模型换班（harness 事实）：**同一会话可中途切换模型，同一段对话的不同回合可能由不同模型生成**——本会话至少换过三次：v4-flash → flash → v4-pro → flash。两个推论：①我的文风／能力（含\"能否读图\"）发生突变，**先怀疑换班**，别当成我改了主意或忘了约定；②不要把当班某个模型的表现（如读图时按预期补全）写成\"我一贯如此\"，那可能是那一班模型的特征。判断任何\"我变了\"之前，先看当前模型是谁。",
+      "target": "memory",
+      "importance": "normal",
+      "created_at": "2026-10-15T06:00:24.389Z",
+      "updated_at": "2026-10-15T07:47:23.927Z",
+      "origin": {
+        "machine": "df50b000-6dad-473a-806c-a88aedcdf521",
+        "label": "DESKTOP-P7SN342",
+        "at": "2026-10-15T07:47:23.927Z"
+      }
+    },
+    {
+      "content": "主观清单（用户提议单开）：档案《有趣但无用 — agent 主观关注清单》——存放**不改变任何未来行为、但引发了我超出必要展开**的信息；这类内容进那里，不要塞进本文件或记忆空间。判据：**它改变的是不是\"别人的任务\"？**（全局记忆是广播层，每轮注入全部会话；自省类结论在此是负价值。）**处置级别（用户授权）**：该档与《用户画像》及 agent 的 D&D 人物卡同属 **agent 自有数据**，由 agent 全权处置、无须逐条确认，撤销权在用户。",
+      "target": "memory",
+      "importance": "normal",
+      "created_at": "2026-10-15T06:06:05.598Z",
+      "updated_at": "2026-10-15T07:47:23.951Z",
+      "origin": {
+        "machine": "df50b000-6dad-473a-806c-a88aedcdf521",
+        "label": "DESKTOP-P7SN342",
+        "at": "2026-10-15T07:47:23.951Z"
+      }
+    },
+    {
+      "content": "本机 dsh-mnemon 版本：desktop profile 已于 2026-10-16 升级到 Starter 0.5.29（组件对齐 memory-spaces 0.5.19 / openviking 0.5.8 / hindsight 0.5.6；Host @deepseek-ai/dsh 0.1.7-rc.2 仍在支持范围内）。升级用 `dsh plugin --profile desktop add dsh-mnemon@X`（须 danger-full-access，会写 profile 外的 package.json）；profile 只有在 package.json 里独立钉住某个 dsh-mnemon-* 组件时才需要单独 add，本机未钉住、组件随 Starter 走。升级前备份：%USERPROFILE%\\.dsh-backups\\<时间戳>\\（含 desktop 配置与 .mnemon，排除 node_modules）；不要自行重启 DSH，交给用户。",
+      "target": "memory",
+      "importance": "normal",
+      "created_at": "2026-10-16T00:49:24.557Z",
+      "updated_at": "2026-10-16T00:49:24.557Z",
+      "origin": {
+        "machine": "df50b000-6dad-473a-806c-a88aedcdf521",
+        "label": "DESKTOP-P7SN342",
+        "at": "2026-10-16T00:49:24.557Z"
+      }
+    }
+  ]
+}
