@@ -29,6 +29,13 @@ review-by: 换设备后必须复核
 | npm 默认缓存在工作区外，沙箱拒写（`EPERM … _cacache`） | 加 `--cache <工作区>\scratch\npm-cache`。**这是写权限问题，不是网络问题** |
 | `node` 22 忽略 `HTTP_PROXY` | 要代理就用 `web_fetch`，或显式给 git/curl 配 |
 
+## 构建产物受保护
+
+**沙箱不允许写构建输出目录**（实测：`server\target\` 被拒）。所以：
+
+- **`mvn` / `gradle` / `tsc` 的产物目录别指望能写**——构建得在沙箱外，或复制到工作区内的副本里跑；
+- **验证「搬完还能构建」可以用副本**：复制源码到 `logs\_buildcheck\` 之类的地方再构建，跑完清掉。
+
 ## git
 
 - `github.com` 主站**时通时不通**；`api.github.com` 稳；`raw.githubusercontent.com` 时好时坏。
