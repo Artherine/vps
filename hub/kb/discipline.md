@@ -50,3 +50,12 @@ review-by: 下次在真实任务里用过之后
 
 - 任何 `Set-Location` / `Push-Location` / `cd` 之后，**立刻打一次 `pwd` 对一眼**；
 - **别用 `| Select-Object` 包住会返回退出码的命令**——它让你读到的是管道最后一段的状态，不是那条命令的。
+## 五、日志里打的必须是查到的，不是打算的
+
+**`hub-sync.ps1 -Action init` 打印了 `远端: https://…`**——那是我 echo 自己的变量，**不是 `git remote -v` 的输出**。
+结果 `origin` 根本没加上，人照着那行"成功日志"去 push，拿到 `fatal: 'origin' does not appear to be a git repository`。
+
+**做法**：
+
+- **写完配置立刻读回来打一行**——`git remote -v`、`Get-Content`、`Test-Path`，**读到的才写进日志**；
+- **别把「我设了这个变量」当成「这件事成了」**。
