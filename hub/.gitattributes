@@ -1,0 +1,2 @@
+# 所有文本一律 LF；换行差异不该出现在 diff 里
+* text=auto eol=lf
