@@ -1,0 +1,24 @@
+{
+  "name": "dsh-profile-desktop",
+  "private": true,
+  "dependencies": {
+    "@dsh-external/dsh-client-ui-skin-deep-whale-manager": "github:Small-tailqwq/dsh-deep-whale#path:/skin-manager",
+    "@dsh-external/dsh-client-ui-skin-maid-atelier": "github:Small-tailqwq/dsh-deep-whale#path:/maid-atelier",
+    "@dsh-external/dsh-client-ui-skin-orca-link": "github:Small-tailqwq/dsh-deep-whale#path:/orca-link",
+    "dsh-better-sidebar": "0.22.0",
+    "dsh-context": "0.58.0"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "dsh-context",
+        "dsh-better-sidebar",
+        "@dsh-external/dsh-client-ui-skin-deep-whale-manager",
+        "@dsh-external/dsh-client-ui-skin-maid-atelier",
+        "@dsh-external/dsh-client-ui-skin-orca-link"
+      ]
+    }
+  }
+}
