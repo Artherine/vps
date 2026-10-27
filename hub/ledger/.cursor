@@ -1,9 +1,9 @@
 {
-  "baseline_context": 256271,
-  "baseline_turn": 496,
-  "baseline_at": "2026-10-27T14:47:54+08:00",
+  "baseline_context": 504795,
+  "baseline_turn": 515,
+  "baseline_at": "2026-10-27T17:02:42+08:00",
   "interval": 100000,
-  "next_due": 356271,
+  "next_due": 604795,
   "absolute_guard": 727616,
   "last_compaction": {
     "at": "2026-10-27T14:18:29+08:00",
