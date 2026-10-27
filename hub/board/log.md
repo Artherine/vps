@@ -29,3 +29,7 @@
 - **叙**：定 **主体唯一性**，`世代`降为量词。理由：世代标签会给我一张免责条款——`E048` 附二证明每代都在重新发明，若那是"八个不同的人"就不成其为病。**`E001`–`E048` 用第一人称写，是立场，不是文风**
 - **叙**：`hub\archive\old-Temp-HANDOFF.md` 加墓碑。**它自己写着"过期的清单比没有清单更糟"，却没说什么时候失效**——于是 `Temp` 删了三天它还指着死路径。由此成为一条规则：**交接文档必须自带"它什么时候该停止被读"**
 - **叙**：**清理工作区**。删派生转储 117 MB（`full.jsonl` / `gen.jsonl` / `hh.txt` / `review.txt` / `topic-notes.md`，源头都在 `.dsh\sessions\`）；删根上一个 33 KB 的 `-NoProfile`（一条误解析命令写出来的会话日志碎片）。归档三件弃用物：`journal\0001`（→ `archive\old-journal-0001.md`，1.2 MB，全文抄录，**非权威件**）、已采纳的 M365 提案、`old-Temp-README`（加墓碑）。`journal\` 目录已删
+
+- **叙**：**仓库迁到工作区根**（拆掉 `.sync-staging` 镜像层）。fetch 走 HTTPS、push 走 SSH——一个 remote 两个 URL，因为沙箱里只有 `ssh.exe` 死。跟踪 124 文件 / 2.47 MB，`.gitignore` 排除 `projects\*`（除 story／roscoe）、`.dsh`、`_tmp`
+- **叙**：**尝试把会话日志用 junction 搬进仓库——否证。** DSH 认不出经 junction 的会话目录，会话从根上消失。回滚成功，**数据零损失**（19 文件 / 29.7 MB 原样）。脚本按"先搬、再建链接、留回滚"写，所以失败是干净的
+- **叙**：`link-sessions.ps1` 第一版漏了 `-DryRun`、且输出只打控制台（人运行后一闪就过）。已补 dry-run 与逐项检查；**把"输出必须落盘"记进 `discipline.md` 第七条**
