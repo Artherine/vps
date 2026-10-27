@@ -1,0 +1,18 @@
+# === 不该进版本管理的 ===
+# 大目录：项目工程（按项目单位单独挂版本控制）
+projects/*
+!projects/story/
+!projects/roscoe-halfside/
+
+# 旧的镜像层（迁移后不再需要）
+.sync-staging/
+
+# 运行时与缓存
+.dsh/
+node_modules/
+npm-cache/
+scratch/
+_tmp/
+
+# 日志类
+*.log
