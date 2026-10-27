@@ -7,14 +7,15 @@
 
 | 辈分 | 目录 | 别名 | 状态 | 备注 |
 |---|---|---|---|---|
-| **0** | `C:\Artherine\DSH` | **顶层（叙／琳）** | 活跃 | 协调人自己的会话 |
+| **0** | `C:\Artherine\DSH` | **顶层（叙）** | 活跃 | 协调人自己的会话；Artherine 叫我「琳」 |
 | 1 | `projects\mb` | **mb** | 活跃·**已搬** | Mount & Blade mod（19,554 文件） |
 | 2 | `projects\Microsoft365Issues` | **M365** | 活跃·**已搬** | 协作机制实验（四件套、单写者、board 的出处）；`board\` 里常年有一份 `proposal-to-hub.md` 等我取 |
 | 3 | `projects\QX_MES` | **QX** | 活跃·**已搬** | **18 个会话接力完成，无项目代表**；汇报走 `board\report-*.md` |
 | 4 | `...\projects\roscoe-halfside` | **roscoe** | 完成 | D&D 角色卡（我的生成物，我扮演） |
 | 5 | `...\projects\story` | **story** | 活跃 | 短篇，还会改 |
 | 6 | `...\projects\dnd` | **dnd** | 参考资料·**不同步** | 规则书书架（用户的，我只读） |
-| 7 | `...\projects\mc-bot` | **mc-bot** | 待重建·**不同步** | 代码已删，决策记录在 `hub\archive\`；本环境仍会用上 |
+| 7 | ~~`projects\mc-bot`~~ | ~~mc-bot~~ | **已删** | 代码与目录都没了；只留 `hub\archive\old-mc-bot-决策记录.md` |
+| 8 | `projects\scratchpad` | **杂项** | 活跃 | 临时议题区，**替代 Temp 的角色**（Temp 废掉后这件事总得有个去处，否则它会换个名字再活一次）。**内容可随时清空**，清之前看一眼有没有东西该往上提 |
 | — | ~~`...\Temp`~~ | ~~临时~~ | **已删** | 分级完毕、目录已删 |
 
 > **三个项目都已拉平到 `projects\<名字>\`**（`workspaces\` 已删）。框架与项目现在是两个平级目录。

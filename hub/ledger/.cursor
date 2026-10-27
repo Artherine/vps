@@ -1,0 +1,29 @@
+{
+  "baseline_context": 256271,
+  "baseline_turn": 496,
+  "baseline_at": "2026-10-27T14:47:54+08:00",
+  "interval": 100000,
+  "next_due": 356271,
+  "absolute_guard": 727616,
+  "last_compaction": {
+    "at": "2026-10-27T14:18:29+08:00",
+    "turn": 475,
+    "floor_context": 256271,
+    "shadowed_messages": 478,
+    "shadowed_tokens": 277138,
+    "summary_chars": 10977
+  },
+
+  "reading": {
+    "what": "重走会话历史，用亲历视角记台账",
+    "source": "projects\\scratchpad\\_tmp\\hh2.txt",
+    "next_offset": null,
+    "total_lines": 21343,
+    "gap": "无。已补完 5249-5698。教训：一次读 900 行会被工具截断中间，一律按 450 行读",
+    "covered_by": ["E000","E001","E002","E003","E004","E005","E006","E007","E008","E009","E010","E011","E012","E013","E014","E015","E016","E017","E018","E019","E020","E021","E022","E023","E024","E025","E026","E027","E028","E029","E030","E031","E032","E033","E034","E035","E036","E037","E038","E039","E040","E041","E042","E043","E044","E045","E046","E047","E048"],
+    "how_to_resume": "回溯已完成，无需继续读源。后续只按 interval 写新条目"
+  },
+
+  "entries": 50,
+  "note": "压缩后基线必须先重置再用（技能不变式）。阈值 727,616 是实测的，不是估的。"
+}
