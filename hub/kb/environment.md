@@ -69,3 +69,19 @@ review-by: 换设备后必须复核
 - **只改 header 那一行**（`cwd`），正文逐字节不动——改正文的代价是校验和丢失。
 - 迁移必须**改五处**：`workspace.json` 的 `path`、会话目录名、日志 header 的 `cwd`、投影缓存的 `identity.cwd`、**`workspace.json` 的 `sessionIds`**（第五处最容易漏）。
 - **DSH 完全退出才能改台账**——它退出时会回写覆盖。
+## 代码页 936：读原生命令的中文输出必须先设 UTF-8
+
+**症状**：脚本解析 `& node ...` 的 JSON 输出时，报
+`Unterminated string. Expected delimiter: ". Path 'note', line N`。
+
+**原因**：本机默认代码页是 **936(GBK)**。原生命令输出 UTF-8 字节，PowerShell 按 GBK 解码——**中文字节序列会吃掉后面的引号**，JSON 当场断裂。
+
+**修法**：脚本里，在调用原生命令之前：
+
+```powershell
+try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch { }
+```
+
+**判据：凡是"解析原生命令输出"的脚本，第一个动作就是设这一行。** 不设不一定立刻坏——**只有当输出里含中文时才坏**，所以它是间歇性的。
+
+**教训**：我在 agent 里每条命令都手设这一行，所以从来撞不到；**而人运行脚本时没人设**。**环境差异不在"机器不同"，在"谁先设了什么"。**

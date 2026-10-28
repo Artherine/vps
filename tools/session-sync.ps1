@@ -41,6 +41,11 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+
+# 这台机器默认代码页是 936(GBK)。原生命令（node）输出的是 UTF-8，
+# 不设这一行，中文字段会被按 GBK 解码——usage 返回里的 "note" 会吃掉引号，
+# 报 "Unterminated string. Expected delimiter: `""。2026-10-28 实测过。
+try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch { }
 $Root     = Split-Path $PSScriptRoot -Parent
 $SyncDir  = Join-Path $Root 'sessions'
 $SessionId = 'session-1a212fb6-8418-4172-9eea-4d9f45f9d3c2'
