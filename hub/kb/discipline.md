@@ -90,3 +90,16 @@ review-by: 下次在真实任务里用过之后
 **而它比别的错更难自查**：因为它看起来"和上次一样"。
 
 **做法**：复用旧脚本时，**先列它的控制项清单**（dry-run / 备份 / 回滚 / 校验 / 日志），逐项勾，别凭印象。
+## 九、`| Out-String` 会按控制台宽度折行，把 JSON 从中间截断
+
+**2026-10-28：`session-sync.ps1` 里把 `& node ... usage $path | ConvertFrom-Json` 改成了 `($raw | Out-String) | ConvertFrom-Json`——一路"改进"，结果报 `Unterminated string`。**
+
+**原因**：`Out-String` 是**格式化输出**，它会按当前控制台宽度插换行。JSON 是单行长文本，一折就断在字符串中间。
+
+**做法**：
+
+- 解析命令输出用 **`($raw -join [Environment]::NewLine)`**，不要用 `Out-String`；
+- **或者干脆不接**——`ConvertFrom-Json` 能吃数组，直接 `| ConvertFrom-Json` 就行（我原来那版就是这么写的，是我把它改坏的）；
+- 判据：**凡是"要再被解析"的文本，一律不许过 `Out-String`／`Format-Table`。**
+
+**这一条的性质和第七条一样**：我在沙箱里跑，输出不折行；人跑的时候折了。**又一次按"我这边的环境"写，而不是按"它会在哪儿运行"写。**
