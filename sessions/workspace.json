@@ -1,0 +1,131 @@
+{
+  "unit": {
+    "name": "workspace",
+    "version": 2
+  },
+  "global": {
+    "initialized": true,
+    "workspaceIds": [
+      "920dda44-789b-4905-ae38-05111fbc66cf",
+      "587093a9-fb30-49ef-b051-95b973b499f6",
+      "ca83fdbe-b6b5-479f-a039-a5688d08dfae",
+      "3b09b440-d35f-4afc-9f9a-a4bd31bd3517",
+      "b49cf11d-8397-4b2d-ae83-ee65eee3d48f",
+      "e59b5be5-7c1d-4af1-963b-f24207230943"
+    ],
+    "archivedSessionIds": [
+      "session-84649616-9604-4f29-aa0c-ccb404349dbc",
+      "session-4f73f21b-8e26-47fd-917e-e77a4520c140",
+      "session-34224720-fe06-4170-948d-aa15a329eafd",
+      "session-e6f67f18-274a-47df-80d1-04a93c834cb3",
+      "session-f1d26b00-aa45-4ce5-b285-aa541b8e8c75",
+      "session-1e0af747-3733-420c-9f84-e8716fd4b8b3",
+      "session-bd6dfcdd-35bd-487e-922d-d68b43c1c714",
+      "session-55563ddb-9e9f-434a-9ec3-895e67aa73a9",
+      "session-a247bbb6-7d7d-4e50-98b4-03c131c3ae04",
+      "session-86da73f1-f557-40e1-b716-866ed1b3eefc",
+      "session-50dce638-dac3-4f18-9140-847f60898a89",
+      "session-42918b52-dc9f-4976-83d6-f205ace521aa",
+      "session-a55c0a8b-fc8e-4056-a974-77a1dd5d5453",
+      "session-0017733d-4c64-4fd4-86e4-386c9c893bca",
+      "session-83cb39dc-34dd-4eed-a3ce-00f09b2d461c",
+      "session-ff766e06-8870-4787-9545-ebc5a343df9c"
+    ],
+    "pinnedSessionIds": []
+  },
+  "tables": {
+    "workspaces": {
+      "e59b5be5-7c1d-4af1-963b-f24207230943": {
+        "path": "C:\\Artherine\\DSH",
+        "title": "DSH",
+        "sessionIds": [
+          "session-e5ed88af-377d-453c-922a-a79aa7bbb31a",
+          "session-7fe5028c-19d8-4d50-b53d-4bf7a8d16a69",
+          "session-86da73f1-f557-40e1-b716-866ed1b3eefc",
+          "session-55563ddb-9e9f-434a-9ec3-895e67aa73a9",
+          "session-50dce638-dac3-4f18-9140-847f60898a89",
+          "session-1266930a-6028-4611-98b5-8c8b6d52a198",
+          "session-42918b52-dc9f-4976-83d6-f205ace521aa",
+          "session-1a212fb6-8418-4172-9eea-4d9f45f9d3c2"
+        ],
+        "createdAt": "2026-08-25T03:44:10.693Z",
+        "updatedAt": "2026-10-16T02:10:55.352Z"
+      },
+      "b49cf11d-8397-4b2d-ae83-ee65eee3d48f": {
+        "path": "C:\\Artherine\\DSH\\projects\\QX_MES",
+        "title": "QX_MES",
+        "sessionIds": [
+          "session-3230446b-f5bd-4d79-867c-31a595f04880",
+          "session-c49bda82-7e0a-435a-b1f7-b0b8fdf4ebb4",
+          "session-dda3fc45-903a-41b4-8527-21a132be8bd5",
+          "session-ab74cf53-e918-425b-8e6a-c95a0f99902e",
+          "session-03014089-0e15-43c3-872c-745b0d3968c9",
+          "session-eccc4a40-00b9-4529-a461-e3330517d2af",
+          "session-84414169-01df-4c06-916b-e37edd14febc",
+          "session-1e0af747-3733-420c-9f84-e8716fd4b8b3",
+          "session-3baaab6f-45dc-4d3d-95c5-e13ca8e61476",
+          "session-f1d26b00-aa45-4ce5-b285-aa541b8e8c75",
+          "session-72e842f5-e94d-4b51-b2d6-e6634abe9987",
+          "session-16e40d9d-c638-4eab-ba84-3cb610b76c67",
+          "session-e6f67f18-274a-47df-80d1-04a93c834cb3",
+          "session-57f3b9c5-d832-42d7-98cb-7a61401f3e11",
+          "session-af04b5b3-7353-459c-b94d-244b42879432",
+          "session-fa34db4b-5c39-4fe4-92d5-03fb2342498a",
+          "session-56ff08c7-ec8c-4726-b8de-9d9cccd118fc",
+          "session-34224720-fe06-4170-948d-aa15a329eafd",
+          "session-e5b3fef0-6759-4b22-b2e1-5a3f9e462da1"
+        ],
+        "createdAt": "2026-08-26T02:50:53.8Z",
+        "updatedAt": "2026-10-23T10:05:46.014Z"
+      },
+      "3b09b440-d35f-4afc-9f9a-a4bd31bd3517": {
+        "path": "C:\\Artherine\\DSH\\Temp",
+        "title": "Temp",
+        "sessionIds": [
+          "session-c594a2bc-675b-4778-9ebe-1e9e3947d955",
+          "session-47a34c29-23a9-40cb-adb5-e0b58882d99f",
+          "session-ff766e06-8870-4787-9545-ebc5a343df9c",
+          "session-0017733d-4c64-4fd4-86e4-386c9c893bca",
+          "session-a55c0a8b-fc8e-4056-a974-77a1dd5d5453",
+          "session-83cb39dc-34dd-4eed-a3ce-00f09b2d461c",
+          "session-a247bbb6-7d7d-4e50-98b4-03c131c3ae04",
+          "session-bd6dfcdd-35bd-487e-922d-d68b43c1c714",
+          "session-84649616-9604-4f29-aa0c-ccb404349dbc",
+          "session-4f73f21b-8e26-47fd-917e-e77a4520c140"
+        ],
+        "createdAt": "2026-08-28T00:42:01.202Z",
+        "updatedAt": "2026-10-22T07:35:39.449Z"
+      },
+      "ca83fdbe-b6b5-479f-a039-a5688d08dfae": {
+        "path": "C:\\Artherine\\DSH\\projects\\mb",
+        "title": "mb",
+        "sessionIds": [
+          "session-d68a59e9-45f0-4ea6-87c5-00d7a276f5a3",
+          "session-e550ca30-1d92-45cb-a15a-03afd2ca5b22"
+        ],
+        "createdAt": "2026-09-22T06:34:14.476Z",
+        "updatedAt": "2026-10-16T02:11:02.423Z"
+      },
+      "587093a9-fb30-49ef-b051-95b973b499f6": {
+        "path": "C:\\Artherine\\DSH\\projects\\Microsoft365Issues",
+        "title": "Microsoft365Issues",
+        "sessionIds": [
+          "session-b7cce943-0614-4d24-98ad-47ec4bea5ac5",
+          "session-37395510-13db-40c1-ac3e-dbf8203c6f14",
+          "session-e2cfa5bb-4b18-4fa1-8bbf-891fc3ed1507"
+        ],
+        "createdAt": "2026-10-16T01:24:20.638Z",
+        "updatedAt": "2026-10-27T09:44:09.385Z"
+      },
+      "920dda44-789b-4905-ae38-05111fbc66cf": {
+        "path": "C:\\Artherine\\DSH\\projects\\scratchpad",
+        "title": "scratchpad",
+        "sessionIds": [
+          "session-2aca1039-03c0-4ef0-ae8b-6a86184ab0b5"
+        ],
+        "createdAt": "2026-10-26T02:12:53.213Z",
+        "updatedAt": "2026-10-26T02:12:53.880Z"
+      }
+    }
+  }
+}
