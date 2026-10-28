@@ -1,9 +1,9 @@
 {
-  "baseline_context": 504795,
-  "baseline_turn": 515,
-  "baseline_at": "2026-10-27T17:02:42+08:00",
+  "baseline_context": 633128,
+  "baseline_turn": 535,
+  "baseline_at": "2026-10-28T09:53:03+08:00",
   "interval": 100000,
-  "next_due": 604795,
+  "next_due": 733128,
   "absolute_guard": 727616,
   "last_compaction": {
     "at": "2026-10-27T14:18:29+08:00",
@@ -24,6 +24,6 @@
     "how_to_resume": "回溯已完成，无需继续读源。后续只按 interval 写新条目"
   },
 
-  "entries": 50,
+  "entries": 51,
   "note": "压缩后基线必须先重置再用（技能不变式）。阈值 727,616 是实测的，不是估的。"
 }
